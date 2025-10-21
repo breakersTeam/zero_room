@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 101501717}
   - component: {fileID: 101501716}
   - component: {fileID: 101501719}
+  - component: {fileID: 101501720}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -153,7 +154,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -164,7 +165,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &101501717
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -245,7 +246,7 @@ CircleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: faf0c04b75513ac4bb42645bf87c5c95, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -271,6 +272,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &101501720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101501715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b82e30efc67c574da17325ac1dba0b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  mainCamera: {fileID: 0}
+  animator: {fileID: 0}
+  rb: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
